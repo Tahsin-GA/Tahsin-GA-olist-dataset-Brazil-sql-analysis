@@ -1,9 +1,9 @@
--- =============================================================
+-- ************************************************************* 
 -- BUSINESS QUESTION:
 -- Which cities consistently experience delivery times above
 -- the national average (12.1 days), once statistically
 -- insignificant cities (very low order counts) are excluded?
--- =============================================================
+-- ************************************************************* 
 
 -- Step 1 (without a minimum order threshold) — this returns
 -- noise: cities with 1-2 total orders showing extreme averages
@@ -54,7 +54,7 @@ LIMIT 10;
 -- Fortaleza       20 days     618 orders   (65% above national avg)
 -- Rio de Janeiro  14 days   6,604 orders   (16% above national avg)
 
--- =============================================================
+-- ************************************************************* 
 -- INTERPRETATION:
 -- I observe that once statistical noise is removed (cities with
 -- under 24 orders), a clear geographic pattern emerges: Salvador,
@@ -71,4 +71,4 @@ LIMIT 10;
 -- in North and Northeast Brazil, with a target of reducing
 -- Belem and Salvador delivery times toward the 12.1 day national
 -- average — a 36-43% reduction from current levels.
--- =============================================================
+-- ************************************************************* 
