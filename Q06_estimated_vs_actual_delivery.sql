@@ -1,9 +1,9 @@
--- =============================================================
+-- ************************************************************* 
 -- BUSINESS QUESTION:
 -- Is the business's 91.9% "early delivery" rate genuine
 -- operational performance, or is it manufactured by overly
 -- conservative delivery estimates?
--- =============================================================
+-- ************************************************************* 
 
 -- Step 1: Categorize every delivered order as Early, On Time,
 -- or Late relative to its estimated delivery date.
@@ -35,20 +35,20 @@ FROM olist_orders_dataset;
 
 -- Result: 11 days average padding between estimated and actual delivery
 
--- =============================================================
+-- ************************************************************* 
 -- INTERPRETATION:
 -- I observe that while 91.9% of orders are technically delivered
 -- "early," the average estimated delivery date is set 11 days
 -- later than the actual average delivery time of 12.1 days
 -- (see Q4) — meaning the business is quoting roughly 23 days
--- when it typically delivers in 12. This matters because the
--- 91.9% early-delivery figure is not a genuine reflection of
+-- when it typically delivers in 12. 
+-- This matters because the 91.9% early-delivery figure is not a genuine reflection of
 -- logistics performance; it is a byproduct of conservative
 -- estimate-setting, and presenting it as a performance metric
 -- internally would mask the business's true delivery capability
 -- and prevent honest identification of regions that are actually
--- underperforming (see Q5). The business should reduce estimate
--- padding from 11 days to a 2-3 day buffer above the actual
+-- underperforming (see Q5). 
+-- The business should reduce estimate padding from 11 days to a 2-3 day buffer above the actual
 -- average, setting customer-facing estimates around 14-15 days
 -- instead of 23 — this would create an honest performance
 -- baseline while still preserving a safety margin for delayed
