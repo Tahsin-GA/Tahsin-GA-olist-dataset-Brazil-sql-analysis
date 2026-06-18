@@ -38,11 +38,15 @@ WHERE payment_value >= 1000;
 -- INTERPRETATION:
 -- I observe that only 4.1% of orders (4,256 out of 103,886) are
 -- classified as high value, and just 1.16% (1,150 orders) exceed
--- 1,000 in payment value. This matters because the business's
+-- 1,000 in payment value. 
+--
+-- This matters because the business's
 -- revenue is structurally dependent on high-volume, low-margin
 -- transactions, which limits pricing power and makes total
 -- revenue highly sensitive to order volume rather than order
--- value. The business should identify which product categories
+-- value. 
+--
+-- The business should identify which product categories
 -- generate the 1,150 high-value orders and direct marketing
 -- spend toward those categories, targeting growth from 1,150 to
 -- 2,300 high-value orders within one quarter — a realistic
