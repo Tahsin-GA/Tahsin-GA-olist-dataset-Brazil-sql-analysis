@@ -1,9 +1,9 @@
--- =============================================================
+-- ************************************************************* 
 -- BUSINESS QUESTION:
 -- Which cities have high order demand but a relatively low
 -- seller count, representing an untapped seller recruitment
 -- opportunity?
--- =============================================================
+-- ************************************************************* 
 
 SELECT customer_city,
   COUNT(ord_data.order_id) AS order_count,
@@ -39,19 +39,21 @@ LIMIT 10;
 -- These 8 cities combined generate ~12.34% of total product
 -- revenue while representing ~14% of total orders.
 
--- =============================================================
+-- ************************************************************* 
 -- INTERPRETATION:
 -- I observe that 8 second-tier cities have over 1,000 orders
 -- each but fewer than 1,000 sellers, and their orders-per-seller
 -- ratio (2.2 to 3.5) is roughly 3x lower than Sao Paulo's 9.4 —
 -- meaning sellers in these cities handle far less demand per
--- seller than Sao Paulo sellers do. This matters because it
--- suggests these cities are seller-constrained rather than
+-- seller than Sao Paulo sellers do. 
+-- 
+-- This matters because it suggests these cities are seller-constrained rather than
 -- demand-constrained: order volume already exists, but the
 -- supply side has not scaled to match it, representing a lower-
 -- risk growth opportunity than trying to create demand from
--- scratch. The business should launch a targeted seller
--- recruitment campaign in these 8 cities (starting with Belo
+-- scratch. 
+-- 
+-- The business should launch a targeted seller recruitment campaign in these 8 cities (starting with Belo
 -- Horizonte and Brasilia, the two largest by revenue), with a
 -- goal of raising the orders-per-seller ratio from ~3.5 toward
 -- 7; if this shifts these cities' combined revenue share from
@@ -59,4 +61,4 @@ LIMIT 10;
 -- approximately 1.7M in additional revenue — an estimate that
 -- assumes overall platform revenue otherwise holds steady and
 -- should be validated as recruitment progresses.
--- =============================================================
+-- ************************************************************* 
