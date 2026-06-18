@@ -1,8 +1,8 @@
--- =============================================================
+-- ************************************************************* 
 -- BUSINESS QUESTION:
 -- What is the average number of days between order approval
 -- and the order reaching the customer?
--- =============================================================
+-- ************************************************************* 
 
 SELECT ROUND(AVG(
   julianday(order_delivered_customer_date) - julianday(order_approved_at)
@@ -12,7 +12,7 @@ WHERE order_delivered_customer_date IS NOT NULL;
 
 -- Result: 12.1 days average delivery time (approval to customer)
 
--- =============================================================
+-- ************************************************************* 
 -- INTERPRETATION:
 -- I observe that the average delivery time from order approval
 -- to customer receipt is 12.1 days. This matters for two
@@ -28,4 +28,4 @@ WHERE order_delivered_customer_date IS NOT NULL;
 -- all city-level and seller-level delivery performance is
 -- measured (see Q5), and pursue last-mile logistics partnerships
 -- in any region performing meaningfully above this baseline.
--- =============================================================
+-- ************************************************************* 
