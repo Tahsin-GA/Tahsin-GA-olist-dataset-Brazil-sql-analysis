@@ -61,13 +61,15 @@ LIMIT 10;
 -- Belem, and Fortaleza — all in Brazil's North/Northeast regions
 -- — show delivery times 57-73% above the 12.1 day national
 -- average, while southeast cities like Rio de Janeiro stay much
--- closer to baseline at just 16% above average. This matters
--- because the delay is concentrated in a specific geographic
+-- closer to baseline at just 16% above average. 
+-- 
+-- This matters because the delay is concentrated in a specific geographic
 -- region far from the southeast distribution hubs, suggesting
 -- the cause is logistics network coverage rather than random
 -- operational failure — though without warehouse location data
--- this remains a hypothesis, not a confirmed cause. The business
--- should prioritize last-mile delivery partnerships specifically
+-- this remains a hypothesis, not a confirmed cause. 
+-- 
+-- The business should prioritize last-mile delivery partnerships specifically
 -- in North and Northeast Brazil, with a target of reducing
 -- Belem and Salvador delivery times toward the 12.1 day national
 -- average — a 36-43% reduction from current levels.
