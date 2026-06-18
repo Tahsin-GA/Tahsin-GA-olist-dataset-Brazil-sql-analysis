@@ -51,12 +51,15 @@ SELECT SUM(payment_value) FROM olist_order_payments_dataset;
 -- INTERPRETATION:
 -- I observe that just 5 cities (2.4% of 4,119 total cities)
 -- generate 27.4% of total revenue, and the top 100 cities
--- generate 60.7%. This matters because Sao Paulo, the single
+-- generate 60.7%. 
+--
+-- This matters because Sao Paulo, the single
 -- largest revenue source, achieves this through order volume
 -- rather than order value — its AOV of 141 is the second-lowest
 -- among top cities, well below the national average of 154.
 -- This reveals two distinct growth levers: volume-driven cities
 -- like Sao Paulo and value-driven cities like Salvador (AOV 175).
+--
 -- The business should run premium product promotions targeted
 -- at existing Sao Paulo customers to lift AOV from 141 toward
 -- the national average of 154, which would generate approximately
