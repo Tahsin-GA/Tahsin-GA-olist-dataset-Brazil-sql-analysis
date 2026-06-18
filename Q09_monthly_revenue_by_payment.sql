@@ -1,8 +1,8 @@
--- =============================================================
+-- ************************************************************* 
 -- BUSINESS QUESTION:
 -- How stable is credit card's dominance of monthly revenue over
 -- time, and is any alternative payment method gaining share?
--- =============================================================
+-- ************************************************************* 
 
 SELECT
   monthly_by_type.month,
@@ -37,17 +37,19 @@ ORDER BY monthly_by_type.month, payment_type;
 -- voucher       -> stable 2-3% range
 -- debit_card    -> grew from 0.5% (Jan 2017) to 4.5% (Aug 2018) = 9x growth
 
--- =============================================================
+-- ************************************************************* 
 -- INTERPRETATION:
 -- I observe that credit card's share of monthly revenue is
 -- structurally stable, moving only from 79.2% to 78.0% across
 -- 20 months, while debit card share grew nearly 9x in the same
--- period, from 0.5% to 4.5%. This matters because it signals an
--- emerging customer segment adopting debit card payment — likely
+-- period, from 0.5% to 4.5%. 
+--
+-- This matters because it signals an emerging customer segment adopting debit card payment — likely
 -- a different demographic than the dominant credit card base,
--- since debit card does not offer installment flexibility (see
--- Q8) and therefore attracts a different type of buyer. The
--- business should investigate which cities, product categories,
+-- since debit card does not offer installment flexibility (see Q8) 
+-- and therefore attracts a different type of buyer. 
+--
+-- The business should investigate which cities, product categories,
 -- and price tiers are driving debit card growth and build
 -- targeted campaigns for this segment rather than treating all
 -- customers as credit-card-first; if the current growth rate
@@ -55,4 +57,4 @@ ORDER BY monthly_by_type.month, payment_type;
 -- could represent 8-10% of transactions by the end of 2019,
 -- representing meaningful incremental revenue without
 -- cannibalizing the existing credit card base.
--- =============================================================
+-- ************************************************************* 
