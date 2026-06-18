@@ -1,7 +1,7 @@
 # Olist E-Commerce SQL Analysis
 
 ## Project Overview
-Business analysis of 99,442 orders from Brazilian e-commerce platform using SQL in DB Browser SQLite. I have tried to analyze business problems, find their insights though SQL, interpret them and prescribe possible solutions. This is a brainstorming analsis to understand business problems by its data. It exhibits the problem-solving, critica thinking and analytical skills with the help of SQL.
+This project answers 10 real business questions using SQL — from revenue concentration to delivery performance to sellerdistribution. Each query is paired with a business interpretation following a structured framework: what the data shows, why it matters, and what action it recommends. The project demonstrates SQL proficiency alongside business reasoning and data-driven decision making.
 
 ## Dataset
 Olist Brazilian E-Commerce — 5 tables:
