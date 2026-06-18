@@ -37,20 +37,16 @@ FROM olist_orders_dataset;
 
 -- ************************************************************* 
 -- INTERPRETATION:
--- I observe that while 91.9% of orders are technically delivered
--- "early," the average estimated delivery date is set 11 days
--- later than the actual average delivery time of 12.1 days
--- (see Q4) — meaning the business is quoting roughly 23 days
--- when it typically delivers in 12. 
--- This matters because the 91.9% early-delivery figure is not a genuine reflection of
--- logistics performance; it is a byproduct of conservative
--- estimate-setting, and presenting it as a performance metric
--- internally would mask the business's true delivery capability
--- and prevent honest identification of regions that are actually
--- underperforming (see Q5). 
--- The business should reduce estimate padding from 11 days to a 2-3 day buffer above the actual
--- average, setting customer-facing estimates around 14-15 days
--- instead of 23 — this would create an honest performance
--- baseline while still preserving a safety margin for delayed
--- regions like Salvador and Belem.
--- =============================================================
+-- I observe that while 91.9% of orders are technically delivered early,
+-- the estimated delivery date is padded by an average of 11 days beyond
+-- actual delivery time (12.1 days, see Q4) — the business quotes ~23 days
+-- but typically delivers in 12.
+--
+-- This matters because the 91.9% figure does not reflect genuine logistics
+-- performance. It masks the business's true delivery capability and would
+-- prevent honest identification of underperforming regions (see Q5).
+--
+-- The business should reduce estimate padding from 11 days to a 2-3 day
+-- buffer, setting customer-facing estimates at 14-15 days instead of 23 —
+-- preserving safety margin for slower regions like Salvador and Belem.
+-- ************************************************************* 
