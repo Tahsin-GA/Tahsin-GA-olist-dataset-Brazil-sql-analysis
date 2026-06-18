@@ -1,8 +1,8 @@
--- =============================================================
+-- ************************************************************* 
 -- BUSINESS QUESTION:
 -- Which cities generate the most payment value, and what
 -- percentage of total revenue do the top cities represent?
--- =============================================================
+-- ************************************************************* 
 
 -- Step 1: Rank top 100 cities by total payment value.
 
@@ -47,7 +47,7 @@ SELECT SUM(payment_value) FROM olist_order_payments_dataset;
 -- Sao Paulo:      15,540 orders | AOV ~141  (2nd lowest AOV in top cities)
 -- Rio de Janeiro:  6,882 orders | AOV ~169
 
--- =============================================================
+-- ************************************************************* 
 -- INTERPRETATION:
 -- I observe that just 5 cities (2.4% of 4,119 total cities)
 -- generate 27.4% of total revenue, and the top 100 cities
@@ -62,4 +62,4 @@ SELECT SUM(payment_value) FROM olist_order_payments_dataset;
 -- the national average of 154, which would generate approximately
 -- 202,000 in additional revenue (13 AOV gap x 15,540 orders)
 -- without requiring any increase in order volume.
--- =============================================================
+-- ************************************************************* 
