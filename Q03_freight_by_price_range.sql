@@ -32,12 +32,15 @@ ORDER BY total_freight DESC;
 -- I observe that 97.1% of order items fall in the 0-500 price
 -- range, and that average freight cost per item rises steadily
 -- with price tier — from 16.2 in the cheapest tier to 60.2 in
--- the most expensive tier. This matters because the business's
+-- the most expensive tier. 
+-- 
+-- This matters because the business's
 -- total freight expense is driven by transaction volume in low
 -- price tiers rather than by per-unit shipping cost, while
 -- premium tier shipments are individually more expensive to
--- fulfill but contribute far less to total freight volume. The
--- business should target the 37,097 buyers currently in the
+-- fulfill but contribute far less to total freight volume. 
+--
+-- The business should target the 37,097 buyers currently in the
 -- 101-500 tier with upsell campaigns toward the 501-1000 tier,
 -- since this is a more realistic upgrade path than moving
 -- 0-100 buyers directly to premium tiers. A 30% conversion of
