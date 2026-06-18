@@ -1,8 +1,8 @@
--- =============================================================
+-- ************************************************************* 
 -- BUSINESS QUESTION:
 -- Which product price range generates the highest total freight
 -- cost, and does freight cost per item scale with product price?
--- =============================================================
+-- ************************************************************* 
 
 SELECT
   CASE
@@ -27,7 +27,7 @@ ORDER BY total_freight DESC;
 -- Total orders across all ranges = 112,650
 -- 0-100 + 101-500 = 109,434 orders = 97.1% of all order items
 
--- =============================================================
+-- ************************************************************* 
 -- INTERPRETATION:
 -- I observe that 97.1% of order items fall in the 0-500 price
 -- range, and that average freight cost per item rises steadily
@@ -45,4 +45,4 @@ ORDER BY total_freight DESC;
 -- that tier; the exact revenue impact requires average price
 -- per tier, which is a data point to calculate in a follow-up
 -- query before finalizing investment in this initiative.
--- =============================================================
+-- ************************************************************* 
