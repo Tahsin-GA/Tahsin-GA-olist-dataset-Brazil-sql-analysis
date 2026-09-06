@@ -53,3 +53,29 @@ lower-risk seller recruitment opportunity than demand generation
 ## Tools
 DB Browser for SQLite
 
+
+
+## Advanced SQL Concepts (Added Post-Stage 2)
+
+After completing the 10 business questions, 
+the following advanced SQL concepts were 
+studied and practiced on this dataset:
+
+**Window Functions:**
+- RANK() — ranking sellers by revenue 
+  without collapsing rows
+- ROW_NUMBER() — unique sequential ranking 
+  for top-N filtering
+- LAG() — month-over-month revenue comparison
+- LEAD() — next-period value lookup
+- OVER() — window definition clause
+
+**CTEs (Common Table Expressions):**
+- WITH clause for named, readable subquery blocks
+- Rewrote Question 9 (monthly payment type 
+  analysis) using CTEs instead of nested 
+  subqueries for improved readability
+
+**DDL/DML Awareness:**
+- CREATE TABLE, DROP TABLE (DDL)
+- INSERT INTO, UPDATE, DELETE (DML)
